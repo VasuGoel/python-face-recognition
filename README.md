@@ -78,7 +78,7 @@ face_recognition --tolerance some_value ./img/known ./img/unknown
 * To only get the names of the poeple inside the unknown folder type,
 
 ```
-face_recognition ./img/known ./img/unknown | cut -d ',' f2
+face_recognition ./img/known ./img/unknown | cut -d ',' -f2
 ```
 
 ## Built With
