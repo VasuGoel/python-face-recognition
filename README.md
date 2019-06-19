@@ -59,6 +59,20 @@ pip install face_recognition
 face_recognition ./img/known ./img/unknown
 ```
 
+#### 5. Adjust tolerance
+
+* If you don't get the expected results and get a match on known and unknown that is not correct, then first check out the distance or basically how much of a match it is.
+
+```
+face_recognition --show-distance true ./img/known ./img/unknown
+```
+
+* Check out the distance against that unknown picture and adjust the tolerance to get 'unknown person' on that falsely matched unknown picture.
+
+```
+face_recognition --tolerance some_value ./img/known ./img/unknown
+```
+
 
 ## Built With
 
