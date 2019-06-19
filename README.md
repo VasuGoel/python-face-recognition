@@ -21,6 +21,22 @@ Start by either downloading the zip file or clone with HTTPS.
 git clone https://github.com/VasuGoel/python-face-recognition.git
 ```
 
+#### 2. Unzip and change directory
+
+* After cloning, double-click to unzip the project. After unzipping, type
+
+```
+cd ~/Downloads/python-face-recognition-master/
+```
+
+#### 3. Activate the virtual environment
+
+* Activate the virtual environment 'pyshop_env', which can be located inside the django-pyshop-master folder root
+
+```
+source virtual_env/bin/activate
+```
+
 
 
 ## Built With
