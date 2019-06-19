@@ -50,7 +50,7 @@ source virtual_env/bin/activate
 pip install face_recognition
 ```
 
-#### 4. Run a face recognition match on people in known and unknown folders in img/
+#### 4. Run a face recognition match on people in img/known/ and img/unknown/
 
 * Put labelled images of known people in 'img/known/'
 * To run a match of face_recognition on unknown people, put them inside 'img/unknown'
