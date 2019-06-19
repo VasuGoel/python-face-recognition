@@ -13,7 +13,7 @@ Start by either downloading the zip file or clone with HTTPS.
 
 ## Running
 
-### Steps to run application via terminal (on Mac or Linux)
+### Steps to play with application via terminal (on Mac or Linux)
 
 #### 1. Clone the repository
 
@@ -67,12 +67,19 @@ face_recognition ./img/known ./img/unknown
 face_recognition --show-distance true ./img/known ./img/unknown
 ```
 
-* Check out the distance against that unknown picture and adjust the tolerance to get 'unknown person' on that falsely matched unknown picture.
+* Check out the distance against that unknown picture and adjust the tolerance to get 'unknown person' on that falsely matched picture.
 
 ```
 face_recognition --tolerance some_value ./img/known ./img/unknown
 ```
 
+#### 6. Get only the names
+
+* To only get the names of the poeple inside the unknown folder type,
+
+```
+face_recognition ./img/known ./img/unknown | cut -d ',' f2
+```
 
 ## Built With
 
