@@ -11,6 +11,16 @@ Start by either downloading the zip file or clone with HTTPS.
 * Anaconda Distribution (https://www.anaconda.com/distribution/)
 * Python 3.7.3 (https://www.python.org/downloads/)
 
+## Running
+
+### Steps to run application via terminal (on Mac or Linux)
+
+#### 1. Clone the repository
+
+```
+git clone https://github.com/VasuGoel/python-face-recognition.git
+```
+
 
 
 ## Built With
