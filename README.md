@@ -29,14 +29,35 @@ git clone https://github.com/VasuGoel/python-face-recognition.git
 cd ~/Downloads/python-face-recognition-master/
 ```
 
-#### 3. Activate the virtual environment
+#### 3. Create and activate a virtual environment
 
-* Activate the virtual environment 'pyshop_env', which can be located inside the django-pyshop-master folder root
+* Create a virtual environment to pip install face_recognition package and several dependencies inside that virtual environment
+
+```
+pip install virtualenv
+virtualenv virtual_env
+```
+
+* Activate the virtual environment 'virtual_env', which can be located inside the python-face-recognition-master folder root
 
 ```
 source virtual_env/bin/activate
 ```
 
+* Install face_recognition and its dependencies
+
+```
+pip install face_recognition
+```
+
+#### 4. Run a face recognition match on people in known and unknown folders in img/
+
+* Put labelled images of known people in 'img/known/'
+* To run a match of face_recognition on unknown people, put them inside 'img/unknown'
+
+```
+face_recognition ./img/known ./img/unknown
+```
 
 
 ## Built With
