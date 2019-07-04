@@ -17,3 +17,10 @@ known_face_names = [
     "Bill Gates",
     "Steve Jobs"
 ]
+
+# Load test image to find faces in
+test_image = face_recognition.load_image_file('img/groups/bill-steve.jpg')
+
+# Find faces in test image
+face_locations = face_recognition.face_locations(test_image)
+face_encodings = face_recognition.face_encodings(test_image, face_locations)
