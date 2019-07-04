@@ -23,4 +23,10 @@ test_image = face_recognition.load_image_file('img/groups/bill-steve.jpg')
 
 # Find faces in test image
 face_locations = face_recognition.face_locations(test_image)
-face_encodings = face_recognition.face_encodings(test_image, face_locations)
+face_encodings = face_recognition.face_encodings(test_im age, face_locations)
+
+# Convert to PIL format
+pil_image = Image.fromarray(test_image)
+
+# Create and ImageDraw instance
+draw = ImageDraw.Draw(pil_image)
