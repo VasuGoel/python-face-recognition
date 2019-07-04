@@ -41,3 +41,10 @@ for(top, right, bottom, left), face_encoding in zip(face_locations, face_encodin
     if True in matches:
         first_match_index = matches.index(True)
         name = known_face_names[first_match_index]
+
+    # Draw Box
+    draw.rectangle(((left, top), (right, bottom), outline=(0,0,0)))
+
+    # Draw label
+    text_width, text_height = draw.textsize(name)
+    draw.rectangle(((left, bottom - text_height  - 10), (right, bottom)), fill = (0,0,0), outline = (0,0,0))
